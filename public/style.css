@@ -534,8 +534,8 @@ img {
 
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 320px) {
     .container {
-        max-width: 380px;
+        max-width: 320px;
     }
 }
