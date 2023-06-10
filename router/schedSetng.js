@@ -139,7 +139,7 @@ router.put("/api/schedule", async (req, res)=>{
             }
         else {
             if(teacher.length == 1){
-                if(shedInfo.group == teacher[0].group && audience.length == 0){                  
+                if(shedInfo.group == teacher[0].group){                  
                     schedPut()
                 }
                 else{
