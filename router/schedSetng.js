@@ -143,8 +143,7 @@ router.put("/api/schedule", async (req, res)=>{
                     schedPut()
                 }
                 else{
-                    console.log("iselse");
-                    // res.json(`  Мындай мугалим ${teacher[0].group} тайпасында жайгашылган `)
+                    res.json(`  Мындай мугалим ${teacher[0].group} тайпасында жайгашылган `)
                 }
             }
             else{
