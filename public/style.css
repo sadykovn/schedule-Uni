@@ -440,10 +440,10 @@ table, th, td {
 }
 
 .swiper-pagination-bullet {
-    padding-top: 10px;
+    padding-top: 8px;
     border-radius: 10px!important;
-    width: 40px!important;
-    height: 40px!important;
+    width: 42px!important;
+    height: 42px!important;
     text-align: center;
     font-size: 1.5em;
     color: #636f83!important;
