@@ -506,9 +506,9 @@ img {
 
 
 /* media */
-  @media (max-width: 400px) {
+  @media (max-width: 360px) {
     .container {
-        max-width: 400px;
+        max-width: 360px;
     }
     .index .select{
         display: flex;
