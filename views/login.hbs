@@ -1,0 +1,30 @@
+<div class="box">
+    <h2>Login</h2>
+    {{#if loginError}}
+        <div class="isError">
+            <strong>Ката: <span >{{loginError}}</span></strong>
+            <i class="bi bi-x-octagon isClose"></i>
+        </div>
+    {{/if}}
+    <form action="/login" method="post">
+        <div class="InputBox">
+            <input type="text" name="login" required>
+            <label>Login</label>
+        </div>
+        <div class="InputBox">
+            <input type="password" name="password" required>
+            <label>password</label>
+        </div>
+        <div class="panel-body block">
+            <button type="submit" class="btn-primary">Submit</button>
+            <a href="/" class="btn-primary">Cancel</a>
+        </div>
+        {{!-- <input type="submit" value="Submit">
+        <a id="reset" class="btn-primary">Сбросить</a> --}}
+
+
+
+    </form>
+</div>
+<script src="scrLogin.js">
+</script>

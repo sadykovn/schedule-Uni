@@ -1,0 +1,1527 @@
+<h3>Сабактын графиги</h3>
+<h6 >Батыралы Сыдыков атындагы Кыргыз-Өзбек эл аралык университети</h6>
+<header class="header">
+{{#if gear}}
+  <select class="header__select" name="grTeachAud" id="grTeachAud">
+    <option hidden>Жадыбал</option>
+    <option value="group">Группалар боюнча</option>
+    <option value="teacher">Мугалимдер боюнча</option>
+    <option value="audience">Аудиториялар боюнча</option>
+  </select>
+{{/if}}
+  {{#if index}}
+  <a href="/"><i class="bi bi-arrow-bar-left"></i></a>
+  {{/if}}
+  <div class="header__gear">
+    {{#if gear}}
+    <a href="/gear"><i id="gear" class="bi bi-gear-fill text-light fs-5"></i></a>
+    {{/if}}
+      {{#if homeSetng}}
+    <a href="/homeSetng"><i id="home" class="none-home bi bi-house-fill text-light fs-5"></i></a>
+    {{/if}}
+    {{#if schedSetng}}
+    <a href="/schedSetng"><i id="schedGear" class="none-schedGear bi bi-grid-3x2-gap-fill text-light fs-5"></i></a>
+    {{/if}}
+    {{#if authSetng}}
+    <a href="/authSetng"><i id="authGear" class="none-authGear bi bi-person-fill-gear text-light fs-5"></i></a>
+    {{/if}}
+  </div>
+
+</header>
+
+<div class="index">
+    {{#if schedSetng}}
+    <select class="select__style block" name="grTeachAud" id="grTeachAud">
+      <option hidden>Жадыбал</option>
+      <option value="group">Группалар боюнча</option>
+      <option value="teacher">Мугалимдер боюнча</option>
+      <option value="audience">Аудиториялар боюнча</option>
+    </select>
+    {{/if}}
+    <div class="group block">
+        <div class="select">
+            <select class="select__style"  name="semester" id="semester">
+                <option value="" hidden>Семестрди тандаңыз</option>
+                <option value="autumn">Күзгү семестр</option>
+                <option value="spring">Жазгы семестр</option>
+            </select>
+            <select class="select__style" name="kurs" id="kurs">
+                <option value="" hidden>Курсун тандаңыз</option>
+                <option value="1">1-курс</option>
+                <option value="2">2-курс</option>
+                <option value="3">3-курс</option>
+                <option value="4">4-курс</option>
+                <option value="5">5-курс</option>
+            </select>
+            <select class="select__style" name="group" id="group">
+                <option value=""  hidden>Группаны тандаңыз</option>
+            </select>
+        </div>
+        <div class="blockResDob result">
+            <table class="table_comp">
+                <thead><tr><th>Паралар</th> <th>Дш</th> <th>Шш</th> <th>Шр</th> <th>Бш</th> <th>Жм</th> <th>Иш</th></tr></thead>
+                <tbody>
+                  <tr data-pair="1">
+                    <td class="td-pair-number" id="td_pair_number">1</td>
+                    <td data-day="1" class="td-one-day"></td>
+                    <td data-day="2" class="td-two-day"></td>
+                    <td data-day="3" class="td-three-day"></td>
+                    <td data-day="4" class="td-four-day"></td>
+                    <td data-day="5" class="td-five-day"></td>
+                    <td data-day="6" class="td-six-day"></td>
+                  </tr>
+                  <tr data-pair="2">
+                    <td class="td-pair-number" id="td_pair_number">2</td>
+                    <td data-day="1" class="td-one-day"></td>
+                    <td data-day="2" class="td-two-day"></td>
+                    <td data-day="3" class="td-three-day"></td>
+                    <td data-day="4" class="td-four-day"></td>
+                    <td data-day="5" class="td-five-day"></td>
+                    <td data-day="6" class="td-six-day"></td>
+                  </tr>
+                  <tr data-pair="3">
+                    <td class="td-pair-number one" id="td_pair_number">3</td>
+                    <td data-day="1" class="td-one-day"></td>
+                    <td data-day="2" class="td-two-day"></td>
+                    <td data-day="3" class="td-three-day"></td>
+                    <td data-day="4" class="td-four-day"></td>
+                    <td data-day="5" class="td-five-day"></td>
+                    <td data-day="6" class="td-six-day"></td>
+                  </tr>
+                  <tr data-pair="4">
+                    <td class="td-pair-number" id="td_pair_number">4</td>
+                    <td data-day="1" class="td-one-day"></td>
+                    <td data-day="2" class="td-two-day"></td>
+                    <td data-day="3" class="td-three-day"></td>
+                    <td data-day="4" class="td-four-day"></td>
+                    <td data-day="5" class="td-five-day"></td>
+                    <td data-day="6" class="td-six-day"></td>
+                  </tr>
+                </tbody>
+            </table>
+            <div class="table_phone">
+              <div class="swiper mySwiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                  <div data-day="1" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="2" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="3" class="swiper-slide">
+                  <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="4" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>                        
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="5" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>                        
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>                        
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>                        
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>                        
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="6" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>                        
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>                        
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>                        
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-person"></i><span></span>
+                        </p>                        
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="teacher block">
+        <div class="select">
+            <select class="form-control mb-2"  name="semester" id="semester">
+                <option value="" hidden>Семестрди тандаңыз</option>
+                <option value="autumn">Күзгү семестр</option>
+                <option value="spring">Жазгы семестр</option>
+            </select>
+            <select class="form-control mb-2" name="teacher" id="teacher">
+                <option value=""  hidden>Мугалимди тандаңыз</option>
+            </select>
+        </div>
+        <div class="blockResDob result">
+          <table class="table_comp">
+              <thead><tr><th>Паралар</th> <th>Дш</th> <th>Шш</th> <th>Шр</th> <th>Бш</th> <th>Жм</th> <th>Иш</th></tr></thead>
+                <tbody>
+                  <tr data-pair="1">
+                    <td class="td-pair-number">1</td>
+                    <td data-day="1" class="td-week-day"></td>
+                    <td data-day="2" class="td-week-day"></td>
+                    <td data-day="3" class="td-week-day"></td>
+                    <td data-day="4" class="td-week-day"></td>
+                    <td data-day="5" class="td-week-day"></td>
+                    <td data-day="6" class="td-week-day"></td>
+                  </tr>
+                  <tr data-pair="2">
+                    <td class="td-pair-number">2</td>
+                    <td data-day="1" class="td-week-day"></td>
+                    <td data-day="2" class="td-week-day"></td>
+                    <td data-day="3" class="td-week-day"></td>
+                    <td data-day="4" class="td-week-day"></td>
+                    <td data-day="5" class="td-week-day"></td>
+                    <td data-day="6" class="td-week-day"></td>
+                  </tr>
+                  <tr data-pair="3">
+                    <td class="td-pair-number">3</td>
+                    <td data-day="1" class="td-week-day"></td>
+                    <td data-day="2" class="td-week-day"></td>
+                    <td data-day="3" class="td-week-day"></td>
+                    <td data-day="4" class="td-week-day"></td>
+                    <td data-day="5" class="td-week-day"></td>
+                    <td data-day="6" class="td-week-day"></td>
+                  </tr>
+                  <tr data-pair="4">
+                    <td class="td-pair-number">4</td>
+                    <td data-day="1" class="td-week-day"></td>
+                    <td data-day="2" class="td-week-day"></td>
+                    <td data-day="3" class="td-week-day"></td>
+                    <td data-day="4" class="td-week-day"></td>
+                    <td data-day="5" class="td-week-day"></td>
+                    <td data-day="6" class="td-week-day"></td>
+                  </tr>
+                </tbody>
+          </table>
+            <div class="table_phone">
+              <div class="swiper mySwiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                  <div data-day="1" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="2" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="3" class="swiper-slide">
+                  <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="4" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="5" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="6" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-geo-alt"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="audience block">
+        <div class="select">
+            <select class="form-control mb-2"  name="semester" id="semester">
+                <option value="" hidden>Семестрди тандаңыз</option>
+                <option value="autumn">Күзгү семестр</option>
+                <option value="spring">Жазгы семестр</option>
+            </select>
+            <select name="frame" id="frame" class="form-control mb-2">
+                <option value="" hidden >Корпусту тандаңыз</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <select class="form-control mb-2" name="audience" id="audience">
+                <option value=""  hidden>Аудиторияны тандаңыз</option>
+            </select>
+        </div>
+        <div class="blockResDob result">
+          <table class="table_comp">
+              <thead><tr><th>Паралар</th> <th>Дш</th> <th>Шш</th> <th>Шр</th> <th>Бш</th> <th>Жм</th> <th>Иш</th></tr></thead>
+                <tbody>
+                  <tr data-pair="1">
+                    <td class="td-pair-number">1</td>
+                    <td data-day="1" class="td-week-day"></td>
+                    <td data-day="2" class="td-week-day"></td>
+                    <td data-day="3" class="td-week-day"></td>
+                    <td data-day="4" class="td-week-day"></td>
+                    <td data-day="5" class="td-week-day"></td>
+                    <td data-day="6" class="td-week-day"></td>
+                  </tr>
+                  <tr data-pair="2">
+                    <td class="td-pair-number">2</td>
+                    <td data-day="1" class="td-week-day"></td>
+                    <td data-day="2" class="td-week-day"></td>
+                    <td data-day="3" class="td-week-day"></td>
+                    <td data-day="4" class="td-week-day"></td>
+                    <td data-day="5" class="td-week-day"></td>
+                    <td data-day="6" class="td-week-day"></td>
+                  </tr>
+                  <tr data-pair="3">
+                    <td class="td-pair-number">3</td>
+                    <td data-day="1" class="td-week-day"></td>
+                    <td data-day="2" class="td-week-day"></td>
+                    <td data-day="3" class="td-week-day"></td>
+                    <td data-day="4" class="td-week-day"></td>
+                    <td data-day="5" class="td-week-day"></td>
+                    <td data-day="6" class="td-week-day"></td>
+                  </tr>
+                  <tr data-pair="4">
+                    <td class="td-pair-number">4</td>
+                    <td data-day="1" class="td-week-day"></td>
+                    <td data-day="2" class="td-week-day"></td>
+                    <td data-day="3" class="td-week-day"></td>
+                    <td data-day="4" class="td-week-day"></td>
+                    <td data-day="5" class="td-week-day"></td>
+                    <td data-day="6" class="td-week-day"></td>
+                  </tr>
+                </tbody>
+          </table>
+            <div class="table_phone">
+              <div class="swiper mySwiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                  <div data-day="1" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="2" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="3" class="swiper-slide">
+                  <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="4" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="5" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-day="6" class="swiper-slide">
+                    <div data-pair="1" class="pair">
+                      <div class="slide_lesson">
+                        <strong>1-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">  
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div data-pair="2" class="pair">
+                      <div class="slide_lesson">
+                        <strong>2-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="3" class="pair">
+                      <div class="slide_lesson">
+                        <strong>3-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                    <div data-pair="4" class="pair">
+                      <div class="slide_lesson">
+                        <strong>4-пара - <span class="lesson"></span></strong>
+                        <span class="education"></span>  
+                      </div>
+                      <div class="lesson_information">
+                        <p class="slide_teacher_name">
+                          <i class="bi bi-people"></i><span class="teacher_name"></span>
+                        </p>
+                        <p class="slide_time">
+                          <i class="bi bi-clock"></i><span class="time"></span>
+                        </p>
+                        <p class="slide_audience_name">
+                          <i class="bi bi-person"></i><span class="audience_name"></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="scrIndex.js">
+</script>

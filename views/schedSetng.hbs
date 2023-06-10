@@ -1,0 +1,100 @@
+<header class="header">
+    {{#if index}}
+    <a href="/"><i id="home" class="bi bi-arrow-bar-left"> </i></a>
+    {{/if}}
+  <div class="header__gear">
+    {{#if gear}}
+    <a href="/gear"><i id="gear" class="bi bi-gear-fill text-light fs-5"></i></a>
+    {{/if}}
+    {{#if homeSetng}}
+    <a href="/homeSetng"><i id="home" class="none-home bi bi-house-fill text-light fs-5"></i></a>
+    {{/if}}
+    {{#if schedSetng}}
+    <a href="/schedSetng"><i id="schedGear" class="none-schedGear bi bi-grid-3x2-gap-fill text-light fs-5"></i></a>
+    {{/if}}
+    {{#if authSetng}}
+    <a href="/authSetng"><i id="authGear" class="none-authGear bi bi-person-fill-gear text-light fs-5"></i></a>
+    {{/if}}
+  </div>
+
+</header>
+<div class="schedule">
+    <div class="group block">
+        <div class="select">
+            <select class="select__style"  name="semester" id="semester">
+                <option value="" hidden>Семестрди  тандаңыз</option>
+                <option value="autumn">Күзгү семестр</option>
+                <option value="spring">Жазгы семестр</option>
+            </select>
+            <select class="select__style" name="kurs" id="kurs">
+                <option value="" hidden>Курсун тандаңыз</option>
+                <option value="1">1-курс</option>
+                <option value="2">2-курс</option>
+                <option value="3">3-курс</option>
+                <option value="4">4-курс</option>
+                <option value="5">5-курс</option>
+            </select>
+            <select class="select__style" name="group" id="group">
+                <option value=""  hidden>Группасын тандаңыз</option>
+            </select>
+        </div>
+        <div class="form">
+            <form name="groupSchedForm">
+                <div class="isError">
+                    <strong>Ката: <span class="spanData"></span></strong>
+                    <i class="bi bi-x-octagon isClose"></i>
+                </div>
+                <input class="form-control" name="id" value="" type="hidden">
+
+                <div class="block">
+                    <label for="lesson">Сабак аты</label>
+                    <input class="select__style block" name="lesson" id="lesson" placeholder="Введите название урок">
+                </div>
+                <div class="form-radio-block" >
+                    <label  for = "lecture1"><input type="radio" class="form-radio" id="lecture1" name="lecture" value="lk">Лекция</label>
+                    <label  for = "lecture2"><input type="radio" class="form-radio" id="lecture2" name="lecture" value="pr">Практика</label>
+                    <label  for = "lecture3"><input type="radio" class="form-radio" id="lecture3" name="lecture" value="lb">Лаборатрия</label>
+                </div>
+                <div class="form-radio-block">
+                    <label for="time1">Убактысы: <input class="time" type="time" id="time1" name="firstTime">  башталышы</label>
+                    <label for="time2"> <input class="time" type="time" id="time2" name="secondTime">  бүтүшү</label>
+                </div>
+                <div class="block">
+                    <label for="teacher">Мугалим:</label>
+                    <select class="select__style block" name="teacher" id="teacher">
+                        <option value=""  hidden>Сабак берүүчүнүн аты</option>
+                    </select>
+                </div>
+                <div class="block">
+                    <label for="cabinet">Бөлмө:</label>
+                    <select class="select__style block" name="cabinet" id="cabinet">
+                        <option value=""  hidden>Сабак өтүүчү бөлмө</option>
+                    </select>
+                </div>
+                <div class="panel-body block">
+                    <button type="submit" class="btn-primary">сактоо</button>
+                    <a id="reset" class="btn-primary">кайтуу</a>
+                </div>
+            </form>
+        </div>
+        <div class="blockResDob result">
+            <div class="grid-button">
+                <button type="button" class="btn btn-outline-primary">Дш</button>
+                <button type="button" class="btn btn-outline-primary">Шш</button>
+                <button type="button" class="btn btn-outline-primary">Шр</button>
+                <button type="button" class="btn btn-outline-primary">Бш</button>
+                <button type="button" class="btn btn-outline-primary">Жм</button>
+                <button type="button" class="btn btn-outline-primary">Иш</button>
+            </div>
+            <table class="table_comp">
+                <thead><tr><th>Паралар</th> <th>Сабак</th> <th>Окуу материалы</th> <th>Мугалим</th> <th>кабинет</th> <th>Убактысы</th> <th>өзгөртүү</th></tr></thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<script src="scrSchedSetng.js">
+</script>

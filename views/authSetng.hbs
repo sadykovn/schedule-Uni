@@ -1,0 +1,174 @@
+<header class="header">
+    {{#if index}}
+    <a href="/"><i id="home" class="bi bi-arrow-bar-left"></i></a>
+    {{/if}}    
+  <div>
+    {{#if gear}}
+    <a href="/gear"><i id="gear" class="bi bi-gear-fill text-light fs-5"></i></a>
+    {{/if}}
+    {{#if index}}
+    <a href="/homeSetng"><i id="home" class="none-home bi bi-house-fill text-light fs-5"></i></a>
+    {{/if}}
+    {{#if schedSetng}}
+    <a href="/schedSetng"><i id="schedGear" class="none-schedGear bi bi-grid-3x2-gap-fill text-light fs-5"></i></a>
+    {{/if}}
+    {{#if authSetng}}
+    <a href="/authSetng"><i id="authGear" class="none-authGear bi bi-person-fill-gear text-light fs-5"></i></a>
+    {{/if}}
+  </div>
+
+</header>
+<div class="author">
+  <select class="header__select select__style" name="grTeachAud" id="grTeachAud">
+    <option value="group">Группалар боюнча</option>
+    <option value="teacher">Мугалимдер боюнча</option>
+    <option value="audience">Аудиториялар боюнча</option>
+  </select>
+    <div class="group block">
+        <h2>Группалардын тизмеси</h2>
+        <div class="select">    
+            <label for="kurs">Курс боюнча издөө</label>
+            <select class="select__style block" name="kurs" id="kurs">
+                <option value="">Баардык курстарды көрүү</option>
+                <option value="1">1-курс</option>
+                <option value="2">2-курс</option>
+                <option value="3">3-курс</option>
+                <option value="4">4-курс</option>
+                <option value="5">5-курс</option>
+            </select>
+        </div>
+        <div>
+            <div class="form">
+                <form name="groupForm">
+                    <div class="isError" role="alert">
+                        <strong>Ката: <span class="spanData"></span></strong>
+                        <i class="bi bi-x-octagon isClose"></i>
+                    </div>
+                    <input name="id" value="0" type="hidden">
+
+                    <div>
+                        <label for="name">Аты:</label>
+                        <input class="select__style block" name="name">
+                    </div>
+                    <div>
+                        <label for="kurs">Курс:</label>
+                        <select class="select__style block" name="kurs">
+                            <option hidden value="">Курсун тандаңыз</option>
+                            <option value="1">1 курс</option>
+                            <option value="2">2 курс</option>
+                            <option value="3">3 курс</option>
+                            <option value="4">4 курс</option>
+                            <option value="5">5 курс</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="quantity">Саны:</label>
+                        <input class="select__style block" name="quantity">
+                    </div>
+                    <div class="panel-body">
+                        <button type="submit" class="btn-primary">сактоо</button>
+                        <a id="reset" class="btn-primary">кайтуу</a>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="blockResDob result">
+                <table class="table_comp">
+                    <thead><tr><th>Аты</th> <th>Курс</th></tr></thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn-primary block click"><i class="bi bi-plus-circle-dotted"></i></button>
+        </div>
+    </div>
+    <div class="teacher block">
+        <h2 style="margin-bottom: 30px;">Мугалимдер тизмеси</h2>
+            <div class="form">
+                <div class="isError" role="alert" >
+                    <strong>Ката: <span class="spanData"></span></strong>
+                    <i class="bi bi-x-octagon isClose"></i>
+                </div>
+                <form name="teacherForm">
+                    <input name="id" value="0" type="hidden">
+
+                    <div>
+                        <label for="firstname">Фамилиясы / Атасынын аты:</label>
+                        <input class="select__style block" name="firstname">
+                    </div>
+                    <div class="form-group">
+                        <label for="secondname">Аты / (уулу-кызы):</label>
+                        <input class="select__style block" name="secondname">
+                    </div>
+                    <div>
+                        <label for="thirdname">Атасынын аты / Аты:</label>
+                        <input class="select__style block" name="thirdname">
+                    </div>
+                    <div class="panel-body">
+                        <button type="submit" class="btn-primary">сактоо</button>
+                        <a id="reset" class="btn-primary">кайтуу</a>
+                    </div>
+                </form>
+            </div>
+            <div class="blockResDob result">
+                <table class="table_comp">
+                    <thead><tr><th>Фамилиясы / Атасынын аты</th> <th>Аты / (уулу-кызы)</th> <th>Атасынын аты / Аты</th> </tr></thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn-primary block click"><i class="bi bi-plus-circle-dotted"></i></button>
+    </div>
+    <div class="audience block">
+        <h2 style="margin-bottom: 30px;">Бөлмөлөр тизмеси</h2>
+        <div class="select">
+            <select name="frame" id="frame" class="select__style block">
+                <option value="">Корпусту тандаңыз</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div>
+            <div class="form">
+                <div class="isError" role="alert">
+                    <strong>Ката: <span class="spanData"></span></strong>
+                    <i class="bi bi-x-octagon isClose"></i>
+                </div>
+                <form name="audienceForm">
+                    <input class="form-control" name="id" value="0" type="hidden">
+
+                    <div>
+                        <label for="cabinet">Кабинет:</label>
+                        <input class="select__style block" name="cabinet">
+                    </div>
+                    <div>
+                        <label for="cabinet">Корпус:</label>
+                        <select class="select__style block" name="korpus">
+                            <option hidden value="">Корпусту тандаңыз</option>
+                            <option value="2">2 корпус</option>
+                            <option value="3">3 корпус</option>
+                        </select>
+                    </div>
+                    <div class="panel-body">
+                        <button type="submit" class="btn-primary">сактоо</button>
+                        <a id="reset" class="btn-primary">кайтуу</a>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="blockResDob result">
+                <table class="table_comp">
+                    <thead><tr><th>Корпус</th> <th>Кабинет</th></tr></thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn-primary block click"><i class="bi bi-plus-circle-dotted"></i></button>
+        </div>
+    </div>
+</div> 
+
+
+
+<script src="scrAuthSetng.js">
+</script>
