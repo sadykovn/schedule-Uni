@@ -533,3 +533,9 @@ img {
     } */
 
   }
+
+  @media (max-width: 380px) {
+    .container {
+        max-width: 380px;
+    }
+}
