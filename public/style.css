@@ -506,6 +506,17 @@ img {
 
 
 /* media */
+@media (max-width: 500px) {
+    .container {
+        max-width: 500px;
+    }
+    .swiper-pagination-bullet {
+        padding-top: 10px;
+        width: 60px!important;
+        height: 60px!important;
+        font-size: 1.1em;
+    }
+}
   @media (max-width: 400px) {
     .container {
         max-width: 400px;
@@ -537,5 +548,11 @@ img {
   @media (max-width: 370px) {
     .container {
         max-width: 370px;
+    }
+    .swiper-pagination-bullet {
+        padding-top: 4px;
+        width: 40px!important;
+        height: 40px!important;
+        font-size: 1.1em;
     }
 }
