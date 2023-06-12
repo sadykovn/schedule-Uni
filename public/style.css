@@ -510,17 +510,6 @@ img {
     .container {
         max-width: 500px;
     }
-    .swiper-pagination-bullet {
-        padding-top: 10px;
-        width: 60px!important;
-        height: 60px!important;
-        font-size: 1.1em;
-    }
-}
-  @media (max-width: 400px) {
-    .container {
-        max-width: 400px;
-    }
     .index .select{
         display: flex;
         flex-direction: 
@@ -538,6 +527,23 @@ img {
     }
     #gear {
         display: none;
+    }
+    .swiper-pagination-bullet {
+        padding-top: 15px;
+        width: 60px!important;
+        height: 60px!important;
+        font-size: 1.1em;
+    }
+}
+  @media (max-width: 400px) {
+    .container {
+        max-width: 400px;
+    }
+    .swiper-pagination-bullet {
+        padding-top: 10px;
+        width: 50px!important;
+        height: 50px!important;
+        font-size: 1.1em;
     }
     /* .td-one-day {
         display: contents;
